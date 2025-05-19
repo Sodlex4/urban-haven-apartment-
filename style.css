@@ -225,7 +225,7 @@ nav ul li a:hover {
 }
 
 .contact-section {
-  background: url('ASSETS/download\ \(1\).jpeg') no-repeat center center/cover;
+background: url("ASSETS/download (1).jpeg") no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
