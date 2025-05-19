@@ -119,24 +119,36 @@ nav ul li a:hover {
 }
 
 /*spaces-rooms*/
-
 .spaces-section {
-  padding: 50px 20px;
+  text-align: center;
+  padding: 40px 20px;
   background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
 }
 
-.spaces-section h2,
-.spaces-section p {
-  text-align: center;
+.spaces-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
 }
+
+.spaces-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 .space-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto 0;
+  padding: 0 20px;
 }
 
 .space-card {
@@ -145,6 +157,8 @@ nav ul li a:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .space-card:hover {
@@ -154,12 +168,16 @@ nav ul li a:hover {
 
 .space-card img {
   width: 100%;
-  height: 180px;
+  aspect-ratio: 4 / 3; /* Maintain 4:3 ratio */
   object-fit: cover;
 }
 
 .space-info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .space-info h3 {
@@ -172,6 +190,7 @@ nav ul li a:hover {
   color: #666;
 }
 
+
 /*Amenities*/
 .container {
   display: flex;
@@ -180,7 +199,6 @@ nav ul li a:hover {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -226,7 +244,6 @@ nav ul li a:hover {
 
 .contact-section {
 background: url("ASSETS/download (1).jpeg") no-repeat center center/cover;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
